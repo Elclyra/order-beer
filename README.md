@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Task description
+
+Create a simple React web application which allows you to order beers.
+
+Upon page load, the application initially loads beer selection data from https://random-data-api.com/api/beer/random_beer?size=20
+
+Based on the available data it must be possible to create an order. Order consists of different beer groups. Beer groups are determined after field "style". For example all beers which have "style": "India Pale Ale" belong to a single group.
+
+It must be possible to add and remove groups from your order. 
+
+When adding beers to a group it must be possible to search from available beers using autocomplete. Search can be done after the field "brand" and "name". It must also be possible to remove added beers from a group.
+
+For every group there are buttons + and - which automatically will add or remove available beers to/from the underlying group ordered by field "alcohol" starting from lowest value. If the user is happy with their order it must be possible to save or finalize the order. Order is considered open if not finalized. Finalized order can not be modified anymore. Open order can be modified at any time and can be stored in a local storage. There can be only 1 open order at the time. When order is finalized it must be visible under order history and order contents should be shown along with it. There can be multiple finalized orders.
+
+It must be possible to refresh the beer selection at any point of time. When full page reload happens then previously loaded beer selection(s) can be considered as not usable anymore, however, added open order items are still valid.
