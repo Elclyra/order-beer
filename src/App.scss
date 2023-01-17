@@ -1,0 +1,38 @@
+.beers-cover{
+    h1,h2{
+        text-align: center;
+    }
+    .beer-groups{
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .beer-group{
+            width: 300px;
+            margin: 20px;
+            background: lightgrey;
+            padding: 20px
+        }
+    }
+    .beer-addition{
+        display: flex;
+        flex-flow: column;
+        >label{
+            margin: 15px 0;
+            font-weight: bold;
+        }
+    }
+    #final-order-result{
+        .final-order{
+            .order-item{
+                .beer-brand{
+                    margin-left: 20px;
+                }
+                .beer-name{
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
